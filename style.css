@@ -18,10 +18,9 @@
 }
 
 body {
-    /* Hanya menggunakan Plus Jakarta Sans */
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: linear-gradient(135deg, var(--bg-color-top) 0%, var(--bg-color-bottom) 100%);
-    background-attachment: fixed; /* Agar gradien tidak terpotong saat di-scroll */
+    background-attachment: fixed;
     color: var(--text-main);
     line-height: 1.5;
     min-height: 100vh;
@@ -222,15 +221,14 @@ body {
    ========================================= */
 @media (min-width: 768px) {
     body {
-        align-items: center; /* Memusatkan web di layar laptop */
+        align-items: center; 
     }
 
     .container {
-        max-width: 1000px; /* Lebar dilebarkan */
+        max-width: 1000px;
         min-height: auto;
         margin: 40px;
         padding: 40px;
-        /* Container utama diberi efek Glass agar melayang premium */
         background-color: rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
@@ -243,7 +241,6 @@ body {
         font-size: 48px;
     }
 
-    /* Kartu berubah menjadi grid menyamping (3 kolom) */
     .cards-container {
         flex-direction: row;
         gap: 24px;
@@ -252,7 +249,7 @@ body {
 
     .card {
         flex: 1;
-        flex-direction: column; /* Ikon di atas, teks di bawah */
+        flex-direction: column; 
         justify-content: center;
         text-align: center;
         padding: 40px 20px;
@@ -269,10 +266,9 @@ body {
     }
 
     .card .chevron {
-        display: none; /* Hilangkan panah di desktop agar lebih bersih */
+        display: none; 
     }
 
-    /* Menu di halaman detail dibagi menjadi 2 kolom */
     .menus-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -282,5 +278,379 @@ body {
 
     .menu-group {
         margin-top: 0;
+    }
+}
+
+/* --- LOGO STYLING --- */
+.logo-edufest {
+    max-width: 140px; /* Ukuran logo di halaman utama */
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+}
+
+.logo-edufest-detail {
+    max-width: 90px; /* Ukuran logo di halaman menu */
+    height: auto;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+}
+/* =========================================
+   ELEMEN TAMBAHAN — versi penyempurnaan
+   ========================================= */
+
+/* --- Latar belakang dekoratif --- */
+.bg-decor {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.35;
+}
+
+.blob-1 {
+    width: 320px;
+    height: 320px;
+    background: var(--text-secondary);
+    top: -80px;
+    left: -100px;
+}
+
+.blob-2 {
+    width: 260px;
+    height: 260px;
+    background: #FFFFFF;
+    bottom: 10%;
+    right: -80px;
+    opacity: 0.12;
+}
+
+.blob-3 {
+    width: 220px;
+    height: 220px;
+    background: var(--accent-color);
+    bottom: -60px;
+    left: 20%;
+    opacity: 0.25;
+}
+
+.float-icon {
+    position: absolute;
+    font-size: 28px;
+    opacity: 0.15;
+    filter: grayscale(0.2);
+    animation: floaty 7s ease-in-out infinite;
+}
+
+.fi-1 { top: 12%; right: 8%; animation-delay: 0s; }
+.fi-2 { top: 55%; left: 6%; font-size: 24px; animation-delay: 1.5s; }
+.fi-3 { top: 30%; right: 18%; font-size: 22px; animation-delay: 3s; }
+.fi-4 { bottom: 8%; right: 12%; animation-delay: 2s; }
+
+@keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-16px); }
+}
+
+.container { position: relative; z-index: 1; }
+
+/* --- Badge eyebrow di header --- */
+.eyebrow-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+/* --- Baris statistik --- */
+.stats-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 16px 10px;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-secondary);
+}
+
+.stat-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 2px;
+    text-align: center;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 30px;
+    background: var(--divider);
+}
+
+/* --- Isi kartu (ikon + teks) --- */
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-sub {
+    font-size: 12.5px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 3px;
+}
+
+/* --- Section Tentang --- */
+.about-section {
+    margin-top: 28px;
+    padding: 22px;
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Footer & sosial media --- */
+.site-footer {
+    margin-top: 32px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.footer-title {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.social-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.detail-footer .social-btn {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer-copy {
+    margin-top: 18px;
+    font-size: 11.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- Detail page: badge ikon & deskripsi --- */
+.detail-header {
+    text-align: center;
+}
+
+.icon-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.detail-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    max-width: 340px;
+    margin: 6px auto 0 auto;
+}
+
+/* --- Menu group: label & konten ikon --- */
+.menu-group-label {
+    display: block;
+    padding: 12px 20px 4px 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.menu-item-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-icon {
+    font-size: 16px;
+}
+
+.menu-item-highlight {
+    background: rgba(212, 175, 55, 0.12);
+}
+
+.menu-item-highlight span:first-child {
+    color: var(--text-secondary);
+}
+
+/* =========================================
+   PENYESUAIAN DESKTOP UNTUK ELEMEN BARU
+   ========================================= */
+@media (min-width: 768px) {
+    .stats-row {
+        max-width: 480px;
+        margin: 0 auto 28px auto;
+    }
+
+    .about-section {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 36px;
+    }
+
+    .site-footer {
+        margin-top: 40px;
+    }
+
+    .float-icon {
+        font-size: 36px;
+    }
+}
+
+/* --- Menghormati preferensi reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+    .float-icon {
+        animation: none;
+    }
+    .page {
+        animation: none;
+    }
+}
+
+/* --- Logo Edufest di halaman utama --- */
+.logo-edufest {
+    max-width: 96px;
+    height: auto;
+    margin: 0 auto 16px auto;
+    display: block;
+    filter: drop-shadow(0 4px 14px rgba(0,0,0,0.3));
+}
+
+/* --- Poster lomba (halaman detail) --- */
+.poster-box {
+    margin: 18px 0 24px 0;
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    padding: 14px;
+    text-align: center;
+}
+
+.poster-img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.poster-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: var(--text-secondary);
+    color: #3a2a00;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.poster-download-btn:hover {
+    background: #e6c25a;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .poster-box {
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
