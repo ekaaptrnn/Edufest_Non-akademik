@@ -2,10 +2,10 @@ const LOMBA_DATA = {
     'Band Competition': {
         icon: '🎸',
         desc: 'Tampilkan performa terbaik band-mu di atas panggung Edufest 2026.',
-        poster: 'poster-band.jpg',
-        handbook: 'MASUKKAN_LINK_HANDBOOK_BAND_DISINI',
+        poster: 'poster-band.png',
+        handbook: 'https://drive.google.com/file/d/1r2O1_8KBMXrnLZGsg4MOUQmhH3ijhIXE/view?usp=drive_link',
         twibbon: 'https://uns.id/TwibbonPesertaEdufest2026',
-        berkas: 'MASUKKAN_LINK_BERKAS_BAND_DISINI',
+        berkas: 'https://drive.google.com/drive/folders/1i7h4sSKd2YocMGT1zD2eqqoYOZB4WOEI?usp=drive_link',
         pendaftaran: 'https://docs.google.com/forms/d/e/1FAIpQLSeVWBjze6aAkp3yG7ErEJ42B79xbBAcaqSzD240r5gg4tm3bg/viewform?usp=publish-editor',
         pengumpulanKarya: 'https://uns.id/SubmitKaryaEdufest2026',
         contactPerson: 'https://wa.me/6285975001017'
@@ -19,7 +19,7 @@ const LOMBA_DATA = {
         berkas: 'MASUKKAN_LINK_BERKAS_ESPORT_DISINI',
         pendaftaran: 'https://forms.gle/gqCMSB1PSfaW9BnAA',
         pengumpulanKarya: null,
-        contactPerson: 'MASUKKAN_LINK_WA_CP_ESPORT_DISINI'
+        contactPerson: 'https://wa.me/6285727326474'
     },
     'Futsal Competition': {
         icon: '⚽',
@@ -27,10 +27,10 @@ const LOMBA_DATA = {
         poster: 'poster-futsal.png',
         handbook: 'MASUKKAN_LINK_HANDBOOK_FUTSAL_DISINI',
         twibbon: 'https://uns.id/TwibbonPesertaEdufest2026',
-        berkas: 'MASUKKAN_LINK_BERKAS_FUTSAL_DISINI',
+        berkas: 'https://docs.google.com/document/d/1QT8fAeAD3uDJNVT0v8ik20bGSm4w0oXg/edit?usp=drive_link&ouid=108089471838212221847&rtpof=true&sd=true',
         pendaftaran: 'https://docs.google.com/forms/d/e/1FAIpQLSeITvohk8OzVSDhu_P03fyoXMMgbyqyEKUF52KJlSNnob6lGQ/viewform?usp=header',
         pengumpulanKarya: null,
-        contactPerson: 'MASUKKAN_LINK_WA_CP_FUTSAL_DISINI'
+        contactPerson: 'https://wa.me/085713942242'
     }
 };
 
