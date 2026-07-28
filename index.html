@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Edufest 2026 - Non Akademik</title>
+    
+    <!-- Memanggil Font Plus Jakarta Sans dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- PAGE 1: HOME -->
+    <div id="home-page" class="page active">
+        <div class="header">
+            <h1>Edufest 2026</h1>
+            <p>Pilih cabang lomba untuk melihat detail.</p>
+        </div>
+
+        <!-- Pembungkus untuk grid di tampilan desktop -->
+        <div class="cards-container">
+            <div class="card" onclick="openDetail('Band Competition')">
+                <div class="card-content">
+                    <span class="icon">🎸</span>
+                    <h2>Band Competition</h2>
+                </div>
+                <span class="chevron">❯</span>
+            </div>
+
+            <div class="card" onclick="openDetail('E-Sport Competition')">
+                <div class="card-content">
+                    <span class="icon">🎮</span>
+                    <h2>E-Sport Competition</h2>
+                </div>
+                <span class="chevron">❯</span>
+            </div>
+
+            <div class="card" onclick="openDetail('Futsal Competition')">
+                <div class="card-content">
+                    <span class="icon">⚽</span>
+                    <h2>Futsal Competition</h2>
+                </div>
+                <span class="chevron">❯</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: DETAIL MENU LOMBA -->
+    <div id="detail-page" class="page">
+        <div class="nav-bar">
+            <button class="back-btn" onclick="goHome()">Kembali</button>
+        </div>
+        
+        <div class="header" style="padding-top: 0;">
+            <h1 id="lomba-title">Nama Lomba</h1>
+        </div>
+
+        <div class="menus-container">
+            <div class="menu-group">
+                <a href="#" class="menu-item" onclick="alert('Buka dokumen Syarat & Ketentuan')">
+                    Syarat & Ketentuan <span class="chevron">❯</span>
+                </a>
+                <a href="#" class="menu-item" onclick="alert('Buka Timeline')">
+                    Timeline Pelaksanaan <span class="chevron">❯</span>
+                </a>
+                <a href="#" class="menu-item" onclick="alert('Buka Aturan Technical Meeting')">
+                    Technical Meeting <span class="chevron">❯</span>
+                </a>
+            </div>
+
+            <div class="menu-group">
+                <a href="https://link-pendaftaran-google-form.com" target="_blank" class="menu-item" style="color: var(--accent-color); font-weight: 700;">
+                    Formulir Pendaftaran <span class="chevron">❯</span>
+                </a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="menu-item">
+                    Hubungi Panitia (WhatsApp) <span class="chevron">❯</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Menghubungkan file JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
