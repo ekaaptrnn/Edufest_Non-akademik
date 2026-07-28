@@ -283,21 +283,19 @@ body {
 
 /* --- LOGO STYLING --- */
 .logo-edufest {
-    max-width: 140px; /* Ukuran logo di halaman utama */
+    max-width: 160px;
     height: auto;
     margin-bottom: 20px;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+    filter: drop-shadow(0 0 18px rgb(255, 255, 255))
+        drop-shadow(0 4px 10px rgb(255, 255, 255));
 }
 
 .logo-edufest-detail {
-    max-width: 90px; /* Ukuran logo di halaman menu */
+    max-width: 90px;
     height: auto;
     margin-bottom: 12px;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+    filter: drop-shadow(0 4px 10px rgb(248, 246, 246));
 }
-/* =========================================
-   ELEMEN TAMBAHAN — versi penyempurnaan
-   ========================================= */
 
 /* --- Latar belakang dekoratif --- */
 .bg-decor {
