@@ -27,7 +27,7 @@ const LOMBA_DATA = {
         icon: '⚽',
         desc: 'Kompak, kompetitif, dan penuh semangat sportivitas di lapangan.',
         poster: 'poster-futsal.jpg',
-        handbook: 'https://drive.google.com/file/d/1WT8PJrenISHF721po9mZ-Xia4b2KNedA/view?usp=drivesdk',
+        handbook: 'https://drive.google.com/file/d/1-4nCgU9xSpizVpj-xoml0Q-55F1Zit9C/view?usp=drivesdk',
         twibbon: 'https://uns.id/TwibbonPesertaEdufest2026',
         captionTwibbon: 'https://docs.google.com/document/d/1g8L5ZNh20b46LKNJx8R9vrj47zsHfWMZFCV_Tsq8iz8/edit?usp=sharing', // Sesuaikan link caption jika ada
         berkas: 'https://docs.google.com/document/d/1QT8fAeAD3uDJNVT0v8ik20bGSm4w0oXg/edit?usp=drive_link&ouid=108089471838212221847&rtpof=true&sd=true',
@@ -78,7 +78,7 @@ function openDetail(namaLomba) {
     } else {
         menuBerkas.style.display = 'none';
     }
-    
+
     // 5. Menu "Pengumpulan Karya" hanya tampil kalau lomba punya link-nya (khusus Band)
     const menuPengumpulanKarya = document.getElementById('menu-pengumpulan-karya');
     if (data.pengumpulanKarya) {
