@@ -18,7 +18,7 @@ const LOMBA_DATA = {
         handbook: 'https://drive.google.com/file/d/1WT8PJrenISHF721po9mZ-Xia4b2KNedA/view?usp=drivesdk',
         twibbon: 'https://uns.id/TwibbonPesertaEdufest2026',
         captionTwibbon: 'https://docs.google.com/document/d/17CcVrTMRdipI5tFDmT5zJUx9FzkSYqB2/edit?usp=drive_link&ouid=108089471838212221847&rtpof=true&sd=true', // Sesuaikan link caption jika ada
-        berkas: 'https://drive.google.com/drive/folders/1AoAAGT1eKLFtSomuDzwnxtM99Q3OfYNW',
+        berkas: null,
         pendaftaran: 'https://forms.gle/gqCMSB1PSfaW9BnAA',
         pengumpulanKarya: null,
         contactPerson: 'https://wa.me/6285727326474'
