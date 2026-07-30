@@ -71,6 +71,14 @@ function openDetail(namaLomba) {
         menuCaptionTwibbon.style.display = 'none';
     }
 
+    const menuBerkas = document.getElementById('menu-berkas');
+    if (data.berkas) {
+        menuBerkas.href = data.berkas;
+        menuBerkas.style.display = 'flex';
+    } else {
+        menuBerkas.style.display = 'none';
+    }
+    
     // 5. Menu "Pengumpulan Karya" hanya tampil kalau lomba punya link-nya (khusus Band)
     const menuPengumpulanKarya = document.getElementById('menu-pengumpulan-karya');
     if (data.pengumpulanKarya) {
