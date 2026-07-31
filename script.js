@@ -33,7 +33,7 @@ const LOMBA_DATA = {
         berkas: 'https://docs.google.com/document/d/1QT8fAeAD3uDJNVT0v8ik20bGSm4w0oXg/edit?usp=drive_link&ouid=108089471838212221847&rtpof=true&sd=true',
         pendaftaran: 'https://docs.google.com/forms/d/e/1FAIpQLSeITvohk8OzVSDhu_P03fyoXMMgbyqyEKUF52KJlSNnob6lGQ/viewform?usp=header',
         pengumpulanKarya: null,
-        contactPerson: 'https://wa.me/085713942242'
+        contactPerson: 'https://wa.me/6285713942242'
     }
 };
 
