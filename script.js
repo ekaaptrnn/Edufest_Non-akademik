@@ -2,8 +2,8 @@ const LOMBA_DATA = {
     'Band Competition': {
         icon: '🎸',
         desc: 'Tampilkan performa terbaik band-mu di atas panggung Edufest 2026.',
-        poster: 'poster-band.png',
-        handbook: 'https://drive.google.com/file/d/1r2O1_8KBMXrnLZGsg4MOUQmhH3ijhIXE/view?usp=sharing',
+        poster: 'poster-band2.png',
+        handbook: 'https://drive.google.com/file/d/1neTe08dH9wM7K89Nt7ma8CIFmBst93NE/view?usp=sharing',
         twibbon: 'https://uns.id/TwibbonPesertaEdufest2026',
         captionTwibbon: 'https://docs.google.com/document/d/1ye4zzjLJoAkknrJWbWTz_2bVsxm2Q03XJSYLtJ-Fwm4/edit?usp=sharing', // Sesuaikan link caption jika ada
         berkas: 'https://drive.google.com/drive/folders/1i7h4sSKd2YocMGT1zD2eqqoYOZB4WOEI?usp=drive_link',
