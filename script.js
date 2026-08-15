@@ -14,8 +14,8 @@ const LOMBA_DATA = {
     'E-Sport Competition': {
         icon: '🎮',
         desc: 'Adu strategi dan skill bareng tim e-sport terbaik kampus.',
-        poster: 'poster-esport.jpg',
-        handbook: 'https://drive.google.com/file/d/1WT8PJrenISHF721po9mZ-Xia4b2KNedA/view?usp=drivesdk',
+        poster: 'poster-esport2.jpg',
+        handbook: 'https://drive.google.com/file/d/1f1Ob61mT67cf0zUBiZQyxIYyzpCQQrIj/view?usp=drive_link',
         twibbon: 'https://uns.id/TwibbonPesertaEdufest2026',
         captionTwibbon: 'https://docs.google.com/document/d/17CcVrTMRdipI5tFDmT5zJUx9FzkSYqB2/edit?usp=drive_link&ouid=108089471838212221847&rtpof=true&sd=true', // Sesuaikan link caption jika ada
         berkas: null,
